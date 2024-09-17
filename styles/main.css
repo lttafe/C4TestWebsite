@@ -38,11 +38,45 @@ img {
     background-position: center;
     background-size: cover;
     min-height: 50vh;
-    display: grid;
-    place-items: center;
+    /* display: grid;
+    place-items: center; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 .banner h1 {
     color: white;
-    background-color: black;
+    background-color: hsla(0, 0%, 0%, 0.436);
     padding: 10px;
+}
+.home-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1200px;
+    margin: 2em auto;
+    gap: 20px;
+}
+.card-image {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+.card {
+    border: 1px solid #747474;
+}
+.card-content {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+.card-button {
+    background-color: black;
+    color: white;
+    display: block;
+    padding: 0.5em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 75%;
+    align-self: center;
 }
