@@ -80,3 +80,22 @@ img {
     width: 75%;
     align-self: center;
 }
+
+.main-footer {
+    background-color: #202020;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main-footer a {
+    color: #cfcfcf;
+    text-decoration: none;
+}
+.main-footer a:hover {
+    color: white;
+}
+.social-nav a {
+    color: yellow;
+    font-size: 1.2em;
+}
