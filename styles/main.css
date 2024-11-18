@@ -1,17 +1,30 @@
+:root {
+    --main-font-family: "Montserrat", sans-serif;
+    --secondary-font-family: "PT Serif", serif;
+    --primary-light: hsla(202, 20%, 92%, 1);
+    --secondary-mid: hsla(354, 79%, 62%, 1);
+    --myrtle-green: hsla(180, 25%, 42%, 1);
+    --dark-purple: hsla(252, 74%, 9%, 1);
+    --yellow-green: hsla(89, 66%, 58%, 1);
+}
+
 body {
-    background-color: bisque;
+    background-color: var(--primary-light);
     color: hsl(0, 0%, 11%);
     /* font-family: Arial, Helvetica, sans-serif; */
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--main-font-family);
     margin: 0px;
     overflow-y: scroll;
 }
+
 img {
     max-width: 100%;
 }
+
 .logo {
     max-width: 60px;
 }
+
 .main-header {
     display: flex;
     /* flex-direction: row;
@@ -21,34 +34,42 @@ img {
     background-color: hsl(33, 96%, 71%);
     align-items: flex-end;
     padding: 10px 20px;
-    font-family: "PT Serif", serif;
+    font-family: var(--secondary-font-family);
 }
+
 .navigation {
     display: flex;
     flex-flow: row wrap;
 }
+
 .navigation a {
     text-decoration: none;
-    color:hsl(33, 100%, 8%);
+    color: hsl(33, 100%, 8%);
     padding: 15px;
 }
+
 .navigation a:link {
-    color:hsl(33, 100%, 8%);
+    color: hsl(33, 100%, 8%);
 }
+
 .navigation a:visited {
     /* color:hsla(33, 100%, 8%, 0.5); */
-    color:hsl(33, 100%, 8%);
+    color: hsl(33, 100%, 8%);
 }
+
 .navigation a:hover {
-    color:hsl(33, 96%, 71%);
+    color: hsl(33, 96%, 71%);
     background-color: hsl(33, 100%, 8%);
 }
+
 .navigation a:active {
     color: red;
 }
+
 .navigation a.active {
     font-weight: bold;
 }
+
 .nav-button {
     align-self: center;
     font-size: 32px;
@@ -58,10 +79,12 @@ img {
     border-color: transparent;
     display: none;
 }
+
 .nav-button:focus {
     background-color: #202020;
     color: #d7d5d5;
 }
+
 .banner {
     background-image: url("../images/pexels-jakkel-418831.jpg");
     background-position: center;
@@ -73,11 +96,13 @@ img {
     justify-content: flex-start;
     align-items: flex-start;
 }
+
 .banner h1 {
     color: white;
     background-color: hsla(0, 0%, 0%, 0.436);
     padding: 10px;
 }
+
 /* carousel */
 .slide {
     min-width: 100%;
@@ -89,10 +114,12 @@ img {
     background-size: cover;
     background-position: center;
 }
+
 .slide:nth-child(1) {
     background-color: hotpink;
     background-image: url("../images/83258a66-0e2b-4615-a80d-064f27a4264b.jpg");
 }
+
 .slide:nth-child(2) {
     background-color: #e3e360;
     background-image: url("../images/68cd1571-21c9-44ba-bc1f-e9af6e03f7ca.jpg");
@@ -106,6 +133,7 @@ img {
     margin: 2em auto;
     gap: 20px;
 }
+
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -113,19 +141,23 @@ img {
     margin: 2em auto;
     gap: 20px;
 }
+
 .card-image {
     aspect-ratio: 1/1;
     object-fit: cover;
     object-position: center;
 }
+
 .card {
     border: 1px solid #747474;
 }
+
 .card-content {
     padding: 1em;
     display: flex;
     flex-direction: column;
 }
+
 .card-button {
     background-color: black;
     color: white;
@@ -145,39 +177,49 @@ img {
     flex-direction: row;
     justify-content: space-between;
 }
+
 .main-footer a {
     color: #cfcfcf;
     text-decoration: none;
 }
+
 .main-footer a:hover {
     color: white;
 }
+
 .social-nav a {
     color: yellow;
     font-size: 1.2em;
 }
+
 /* contact form */
 #contact {
     display: flex;
     flex-direction: column;
 }
+
 #contact label {
     font-weight: 500;
 }
+
 #contact input {
     margin-bottom: 0.5em;
     border: 1px solid #666666;
     padding: 0.5em;
 }
-#contact input:focus, #contact textarea:focus {
+
+#contact input:focus,
+#contact textarea:focus {
     outline: dashed 2px red;
 }
+
 .form-buttons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 1em;
 }
+
 .form-buttons button {
     background-color: #202020;
     padding: 0.5em;
@@ -186,12 +228,14 @@ img {
     border: 1px solid transparent;
     border-radius: 4px;
 }
+
 /* about page */
 .about-page {
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
+
 .about-content {
     grid-template-columns: 1fr 1fr;
     display: grid;
